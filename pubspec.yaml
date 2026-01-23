@@ -1,0 +1,88 @@
+name: lavent_a
+description: "Lavent Luxury Abaya Manager - Order, Payment & Invoice Management"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Local Database (Drift/SQLite)
+  drift: ^2.18.0
+  sqlite3_flutter_libs: ^0.5.24
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # PDF Generation
+  pdf: ^3.11.0
+  printing: ^5.12.0
+
+  # File Handling & Backup
+  file_picker: ^8.0.3
+  share_plus: ^9.0.0
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+
+  # Security & Auth
+  flutter_secure_storage: ^9.2.2
+  crypto: ^3.0.3
+
+  # Notifications & Reminders
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  
+  # Drift Code Generation
+  drift_dev: ^2.18.0
+  build_runner: ^2.4.11
+  
+  # Riverpod Code Generation
+  riverpod_generator: ^2.4.0
+  custom_lint: ^0.6.4
+  riverpod_lint: ^2.3.10
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Assets for PDF generation and images
+  assets:
+    - assets/fonts/
+    - assets/images/
+
+  # Cairo font for Arabic support
+  # fonts:
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: assets/fonts/Cairo-Regular.ttf
+  #       - asset: assets/fonts/Cairo-Bold.ttf
+  #         weight: 700
